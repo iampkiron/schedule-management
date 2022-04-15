@@ -1,0 +1,80 @@
+.login_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_inner {
+  padding: 7rem;
+  border: 1px solid var(--gray);
+}
+
+.login_desc {
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login_desc h1 {
+  font-size: 2.4rem;
+  margin: 0.8rem;
+}
+
+.login_desc a {
+  font-size: 1.4rem;
+  color: var(--active);
+}
+
+.login_desc a:hover {
+  text-decoration: underline;
+}
+
+.login_form {
+  width: 38rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_form button {
+  cursor: pointer;
+  padding: 18px 0;
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+label[for="password"] {
+  margin-top: 2.4rem;
+}
+
+label,
+input {
+  font-size: 1.6rem;
+}
+
+input {
+  margin-top: 0.8rem;
+  padding: 1.5rem;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+}
+
+@media only all and (max-width: 1200px) {
+  .login_inner {
+    min-width: 32rem;
+    padding: 0 2rem;
+    border: none;
+  }
+
+  .login_desc,
+  .login_form {
+    width: auto;
+  }
+}

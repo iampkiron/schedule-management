@@ -1,0 +1,23 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+footer {
+  background-color: var(--black);
+}
+.footer_container {
+  padding: 3.2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--gray);
+  font-size: 1.4rem;
+}
