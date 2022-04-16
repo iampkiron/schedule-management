@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>성공일정</title>
+    <meta name="author" content="Andy Park" />
+    <meta
+      name="keywords"
+      content="성공일정, 아이젠하워 매트릭스, 일정관리, 업무 분배, 우선순위"
+    />
+    <meta
+      name="description"
+      content="아이젠하워 매트릭스, 중요도와 긴급성을 기준으로 우선 순위를 세워 성공 일정을 만들어보세요!"
+    />
+
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="/img/favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="header_container">
+          <div class="title">
+            <a href="#">성공일정</a>
+          </div>
+          <!-- title -->
+          <div class="sign_container">
+            <div class="unsigned">
+              <div class="sign-in">
+                <span class="material-icons-outlined"> lock </span>
+                <span>로그인</span>
+              </div>
+            </div>
+            <!-- unsigned -->
+            <div class="signed">
+              <div class="dropdown hidden">
+                <div class="dropdown_button">
+                  안녕하세요. <span id="username">Andy</span>님.
+                </div>
+                <div class="dropdown_content">
+                  <button id="sign-out">로그아웃</button>
+                </div>
+              </div>
+            </div>
+            <!-- signed -->
+          </div>
+          <!-- sign_container -->
+        </div>
+        <!-- header_container -->
+      </div>
+    </header>
+    <main>
+      <div class="inner">
+        <div class="matrix_container">
+          <div id="decide" class="matrix_item">
+            <div class="item_header">
+              <h3>계획을 세워서 해야할 일</h3>
+              <input
+                class="matrix-input"
+                type="text"
+                placeholder="새로운 할 일 추가하기"
+              />
+            </div>
+            <ul class="item_list">
+              <li class="list_item">
+              <div class="done-text-container">
+                <input class="todo_status"type="checkbox" />
+                <p class="todo_text">산책가기</p>
+              </div>
+              <div class="update-delete-container">
+                <span class="todo-update material-icons-outlined">
+                  edit_note
+                </span>
+                <span class="todo-delete material-icons-outlined">
+                  delete
+                </span>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <!-- decide -->
+          <div id="decide" class="matrix_item">
+            <div class="item_header">
+              <h3>계획을 세워서 해야할 일</h3>
+              <input
+                class="matrix-input"
+                type="text"
+                placeholder="새로운 할 일 추가하기"
+              />
+            </div>
+            <ul class="item_list">
+              <li class="list_item">
+              <div class="done-text-container">
+                <input class="todo_status"type="checkbox" />
+                <p class="todo_text">산책가기</p>
+              </div>
+              <div class="update-delete-container">
+                <span class="todo-update material-icons-outlined">
+                  edit_note
+                </span>
+                <span class="todo-delete material-icons-outlined">
+                  delete
+                </span>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <!-- do -->
+          <div id="decide" class="matrix_item">
+            <div class="item_header">
+              <h3>계획을 세워서 해야할 일</h3>
+              <input
+                class="matrix-input"
+                type="text"
+                placeholder="새로운 할 일 추가하기"
+              />
+            </div>
+            <ul class="item_list">
+              <li class="list_item">
+              <div class="done-text-container">
+                <input class="todo_status"type="checkbox" />
+                <p class="todo_text">산책가기</p>
+              </div>
+              <div class="update-delete-container">
+                <span class="todo-update material-icons-outlined">
+                  edit_note
+                </span>
+                <span class="todo-delete material-icons-outlined">
+                  delete
+                </span>
+              </div>
+            </li>
+            </ul>
+          </div>
+          <!-- delegate -->
+          <div id="decide" class="matrix_item">
+            <div class="item_header">
+              <h3>계획을 세워서 해야할 일</h3>
+              <input
+                class="matrix-input"
+                type="text"
+                placeholder="새로운 할 일 추가하기"
+              />
+            </div>
+            <ul class="item_list">
+              <li class="list_item">
+              <div class="done-text-container">
+                <input class="todo_status"type="checkbox" />
+                <p class="todo_text">산책가기산책가기산책가기산책가기산책가기산책가기산책가기산책가기산책가기산책가기산책가기산책가기산책가기</p>
+              </div>
+              <div class="update-delete-container">
+                <span class="todo-update material-icons-outlined">
+                  edit_note
+                </span>
+                <span class="todo-delete material-icons-outlined">
+                  delete
+                </span>
+              </div>
+            </li>
+            </ul>
+          </div>
+            <!-- delete -->
+            <span class="importnace">중요도</span>
+            <span class="urgency">긴급성</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="footer_container">
+          <div class="author">개발자: Andy</div>
+          <div class="author_email">이메일: iampkiron@naver.com</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
