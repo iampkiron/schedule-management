@@ -81,6 +81,7 @@ h3 {
 .done-text-container {
   color: #575a6a;
   display: flex;
+  flex: 1;
 }
 
 .update-delete-container {
