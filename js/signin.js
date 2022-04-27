@@ -43,7 +43,8 @@ async function signIn(e) {
     if (res.data.code === 200) {
       alert(res.data.message);
       localStorage.setItem("x-access-token", res.data.result.token);
-      location.href = "index.html";
+      window.close();
+      window.open("index.html");
     }
   } catch (err) {
     console.error(err);

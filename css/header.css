@@ -66,6 +66,7 @@ a {
 }
 
 .dropdown {
+  font-size: 1.6rem;
   position: relative;
 }
 .dropdown_button {
