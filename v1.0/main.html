@@ -27,19 +27,29 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
+    <div class="pop_up_wrap hide">
+      <div class="confirm">
+        <div class="message">로그인이 필요한 서비스입니다</div>
+        <div class="manage">
+          <div class="cancel">취소</div>
+          <div class="agree">확인</div>
+        </div>
+      </div>
+    </div>
+    <!-- /팝업 -->
     <header>
       <div class="inner">
         <div class="header_container">
           <div class="title">
-            <a href="#">성공일정</a>
+            <a href="main.html">성공일정</a>
           </div>
           <!-- title -->
           <div class="sign_container">
             <div class="unsigned">
-              <div class="sign-in">
+              <a href="login.html" class="sign-in">
                 <span class="material-icons-outlined"> lock </span>
                 <span>로그인</span>
-              </div>
+              </a>
             </div>
             <!-- unsigned -->
             <div class="signed">

@@ -1,4 +1,9 @@
-.login_container {
+html {
+  background-color: var(--white);
+  /* color: var(--dark-gray); */
+}
+
+.signin_container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -6,48 +11,53 @@
   align-items: center;
 }
 
-.login_inner {
+.signin_inner {
   padding: 7rem;
   border: 1px solid var(--gray);
 }
 
-.login_desc {
+.signin_desc {
   width: 38rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.login_desc h1 {
+.signin_desc h1 {
   font-size: 2.4rem;
   margin: 0.8rem;
 }
 
-.login_desc a {
+.signin_desc a {
   font-size: 1.4rem;
   color: var(--active);
 }
 
-.login_desc a:hover {
+.signin_desc a:hover {
   text-decoration: underline;
 }
 
-.login_form {
+.signin_form {
   width: 38rem;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
 }
 
-.login_form button {
+.signin_form button {
   cursor: pointer;
   padding: 18px 0;
   margin-top: 2.4rem;
   font-size: 1.6rem;
-  background: var(--black);
-  color: var(--white);
+  background: #f6f6f6;
+  color: var(--dark-gray);
   border: none;
   border-radius: 0.5rem;
+}
+
+.signin_form button:hover {
+  background: var(--side-text-color);
+  color: var(--white);
 }
 
 label[for="password"] {
@@ -67,14 +77,14 @@ input {
 }
 
 @media only all and (max-width: 1200px) {
-  .login_inner {
+  .signin_inner {
     min-width: 32rem;
     padding: 0 2rem;
     border: none;
   }
 
-  .login_desc,
-  .login_form {
+  .signin_desc,
+  .signin_form {
     width: auto;
   }
 }

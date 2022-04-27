@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>성공일정</title>
+    <title>성공일정 회원가입</title>
     <meta name="author" content="Andy Park" />
     <meta
       name="keywords"
@@ -24,6 +24,7 @@
     />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/register.css" />
     <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <body>
@@ -31,19 +32,19 @@
       <div class="inner">
         <div class="header_container">
           <div class="title">
-            <a href="#">성공일정</a>
+            <a href="index.html">성공일정</a>
           </div>
           <!-- title -->
           <div class="sign_container">
-            <div class="unsigned">
-              <div class="sign-in">
+            <div class="unsigned hide">
+              <a href="signin.html" class="sign-in">
                 <span class="material-icons-outlined"> lock </span>
                 <span>로그인</span>
-              </div>
+              </a>
             </div>
             <!-- unsigned -->
             <div class="signed">
-              <div class="dropdown hidden">
+              <div class="dropdown hide">
                 <div class="dropdown_button">
                   안녕하세요. <span id="username">Andy</span>님.
                 </div>
@@ -60,18 +61,37 @@
       </div>
     </header>
     <main>
-      <div class="login_container">
-        <div class="login_inner">
-          <div class="login_desc">
-            <h1>다시 만나서 반가워요!</h1>
-            <a href="#">처음이신가요? 가입하기</a>
+      <div class="signup_container">
+        <div class="signup_inner">
+          <div class="signup_desc">
+            <h1>환영합니다!</h1>
+            <button
+              class="singup_to_signin"
+              onclick="window.open('signin.html','로그인','width=385,height=569,location=no,status=no,scrollbars=yes');"
+            >
+              이미 가입하셨나요? 로그인하기
+            </button>
           </div>
-          <div class="login_form">
+          <div class="signup_form">
             <label for="id">이메일 주소</label>
-            <input id="id" type="text" />
+            <input id="id" type="text" placeholder="예. js25@smtown.com" />
+            <p class="currentEmail">
+              <span class="material-icons-outlined"> error </span> 잘못된 이메일
+              형식입니다.
+            </p>
             <label for="password">비밀번호</label>
-            <input id="password" type="text" />
-            <button>로그인</button>
+            <input id="password" type="password" />
+            <p class="currentPassword">
+              <span class="material-icons-outlined"> error </span> 비밀번호는
+              영문, 숫자를 포함하고 10자 이상이어야 합니다.
+            </p>
+            <label for="nickname">닉네임</label>
+            <input id="nickname" type="text" placeholder="예. 박지성" />
+            <p class="currentNickname">
+              <span class="material-icons-outlined"> error </span> 닉네임은 2자
+              이상 10자 이내여야 합니다.
+            </p>
+            <button id="signup">회원가입</button>
           </div>
         </div>
       </div>
@@ -84,5 +104,13 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.0/axios.min.js"
+      integrity="sha512-yt+yearry6Evoodvr9oWzfGBYcXRyXAbJNZRyD7bHUHs39vj82vnRv1zCqzdh+bShT+c9IQ4T+uX3CmLofd4ig=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/signup.js"></script>
   </body>
 </html>

@@ -1,4 +1,11 @@
-.register_container {
+.currentEmail {
+  display: none;
+}
+.currentPassword {
+  display: none;
+}
+
+.signup_container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -6,40 +13,43 @@
   align-items: center;
 }
 
-.register_inner {
+.signup_inner {
   padding: 7rem;
   border: 1px solid var(--gray);
 }
 
-.register_desc {
+.signup_desc {
   width: 38rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.register_desc h1 {
+.signup_desc h1 {
   font-size: 2.4rem;
   margin: 0.8rem;
 }
 
-.register_desc a {
+.signup_desc button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
   font-size: 1.4rem;
   color: var(--active);
 }
 
-.register_desc a:hover {
+.signup_desc button:hover {
   text-decoration: underline;
 }
 
-.register_form {
+.signup_form {
   width: 38rem;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
 }
 
-.register_form p {
+.signup_form p {
   padding: 0.5rem;
   margin-top: 0.8rem;
   font-size: 1.4rem;
@@ -48,22 +58,27 @@
   border-radius: 0.5rem;
 }
 
-.register_form p span {
+.signup_form p span {
   font-size: 1.4rem;
 }
 
-.register_form button {
+.signup_form button {
   cursor: pointer;
   padding: 18px 0;
   margin-top: 2.4rem;
   font-size: 1.6rem;
-  background: var(--black);
-  color: var(--white);
+  background: #f6f6f6;
+  color: var(--dark-gray);
   border: none;
   border-radius: 0.5rem;
 }
 
-label[for="password"] {
+.signup_form button:hover {
+  background: var(--side-text-color);
+  color: var(--white);
+}
+
+label[for="nickname"] {
   margin-top: 2.4rem;
 }
 
@@ -79,15 +94,21 @@ input {
   border-radius: 0.5rem;
 }
 
-@media only all and (max-width: 1200px) {
-  .register_inner {
+@media all and (max-width: 1320px) {
+  .signup_inner {
     min-width: 32rem;
     padding: 0 2rem;
     border: none;
   }
 
-  .register_desc,
-  .register_form {
+  .signup_desc,
+  .signup_form {
     width: auto;
+  }
+}
+
+@media all and (min-width: 1320px) {
+  .signup_inner {
+    min-width: 39rem;
   }
 }
